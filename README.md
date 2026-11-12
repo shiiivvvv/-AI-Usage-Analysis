@@ -14,12 +14,12 @@ Analyse how students and professionals use AI tools, and which tools, purposes a
 - Mixed languages: translated Portuguese and French job titles to English
 - Text to numbers: removed `$`, `,` and `hrs` from income, cost and hours columns and converted them to numeric
 - Outliers: set to missing a student income of 250000 (next highest 10311), a usage value of 23 hrs/day (next highest 9.9), and two Age values of 97 (next highest 64)
-- Missing values: ___ to ___ per column; left as missing and excluded per chart when needed
+-- Missing values: 5 to 37 per column out of 288 rows (highest is Age at about 13%); only User_ID and User_Type are complete. Left as missing and excluded per chart when needed
 
 ## Key Insights
 1. Time_Saved_Hours_Per_Week - 
 - for the student is -> 6.0 hrs per week
-- for thr Professional -> 5.6 hrs per week
+- for the Professional -> 5.6 hrs per week
 
 2. Productivity_Score -
 - ChatGPT has 5.23 avg productivity score
@@ -27,7 +27,7 @@ Analyse how students and professionals use AI tools, and which tools, purposes a
 - Copilot has 5.51 avg productivity score
 - DeepSeek has 5.53 avg productivity score
 - Gemini has 5.06 avg productivity score
-- Grammarly has 5.11 avgproductivity score
+- Grammarly has 5.11 avg productivity score
 - Meta AI has 5.15 avg productivity Score
 - Perplexity AI has 4.64 avg productivity score
 
@@ -39,6 +39,9 @@ Analyse how students and professionals use AI tools, and which tools, purposes a
 ## Charts
 ![Satisfaction vs productivity by tool](svp.png)
 ![Hours saved by user type](time saved.png)
+![Co relation map](co relation map.png)
+![age and ai ](age and ai.png)
+
 
 ## Tools
 Python, pandas, NumPy, matplotlib, seaborn, Jupyter Notebook
